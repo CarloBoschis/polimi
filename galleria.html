@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<style>
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<h1>Galleria</h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Joy.jpg">
+      <img src="Joy.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Jennifer Lawrence Joy</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Harley Quinn.jpg">
+      <img src="Harley Quinn.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Margot Robbie Harley Quinn</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="The Joker.jpg">
+      <img src="The Joker.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Jared Leto The Joker</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Billie Joe Armstrong.jpg">
+      <img src="Billie Joe Armstrong.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Billie Joe Armstrong</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+
+</div>
+
+</body>
+</html>
