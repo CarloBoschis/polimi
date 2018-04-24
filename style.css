@@ -32,7 +32,7 @@
 
 }
 @media screen and (max-width: 600px) {
-    .column.side, .column.middle {
+    .card , .header , .topnav , .footer {
         width: 100%;
     }
 }
