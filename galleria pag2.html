@@ -9,6 +9,9 @@ div.gallery {
 
 div.gallery:hover {
     border: 1px solid #777;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 100;
 }
 
 div.gallery img {
@@ -53,7 +56,15 @@ div.desc {
 </head>
 <body>
 
-<h1>Galleria</h1>
+  <div class="header">
+  <h1 style="font-size:60px">Galleria</h1>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="curriculum.html">Curriculum</a>
+    <a href="contatti.html">Contatti</a>
+  </div>
 
 <div class="responsive">
   <div class="gallery">
@@ -97,6 +108,10 @@ div.desc {
 
 </div>
 <p style="text-align:center;background-color:white"><a href="galleria.html">1</a>&nbsp;2&nbsp;<a href="galleria pag3.html">3</a>&nbsp;4</p>
-<p style="text-align:center;background-color:white"><a href="index.html">Home</a></p> 
+<div class="footer">
+  <h4>Politecnico di Milano</h4>
+  <h6>Facoltà di Design</h6>
+</div>
+
 </body>
 </html>
